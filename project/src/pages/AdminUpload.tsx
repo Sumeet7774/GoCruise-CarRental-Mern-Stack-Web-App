@@ -25,7 +25,7 @@ function AdminUpload() {
       const token = localStorage.getItem('token');
 
       await axios.post(
-        'http://localhost:3000/api/cars',
+        'https://gocruise-carrental-mern-stack-web-app.onrender.com/api/cars',
         {
           name: formData.name,
           brand: formData.brand,

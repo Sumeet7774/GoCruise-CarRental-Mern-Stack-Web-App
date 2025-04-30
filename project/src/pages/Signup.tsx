@@ -15,7 +15,7 @@ export default function Signup() {
     e.preventDefault();
 
     try {
-      const response = await axios.post('http://localhost:3000/api/auth/register', {
+      const response = await axios.post('https://gocruise-carrental-mern-stack-web-app.onrender.com/api/auth/register', {
         name,
         email,
         password

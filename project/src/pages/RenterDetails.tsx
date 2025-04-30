@@ -29,7 +29,7 @@ const RenterDetails = () => {
 
     const fetchRenters = async () => {
       try {
-        const res = await axios.get('http://localhost:3000/api/cars/renters', {
+        const res = await axios.get('https://gocruise-carrental-mern-stack-web-app.onrender.com/api/cars/renters', {
           headers: {
             Authorization: `Bearer ${localStorage.getItem('token')}`,
           },    

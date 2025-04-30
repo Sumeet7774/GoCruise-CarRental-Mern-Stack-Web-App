@@ -20,7 +20,7 @@ function EditCar() {
     const fetchCar = async () => {
       try {
         const token = localStorage.getItem('token');
-        const res = await axios.get(`http://localhost:3000/api/cars/${id}`, {
+        const res = await axios.get(`https://gocruise-carrental-mern-stack-web-app.onrender.com/api/cars/${id}`, {
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -46,7 +46,7 @@ function EditCar() {
     try {
       const token = localStorage.getItem('token');
       await axios.put(
-        `http://localhost:3000/api/cars/${id}`,
+        `https://gocruise-carrental-mern-stack-web-app.onrender.com/api/cars/${id}`,
         { ...car },
         {
           headers: {

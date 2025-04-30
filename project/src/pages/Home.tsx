@@ -109,35 +109,7 @@ const Home = () => {
         </div>
       </div>
 
-      {/* FAQ Section */}
-      <div className="max-w-7xl mx-auto px-4">
-        <h2 className="text-2xl md:text-3xl font-bold text-center mb-6 md:mb-8">Frequently Asked Questions</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
-          {[
-            {
-              q: "What documents do I need to rent a car?",
-              a: "You'll need a valid driver's license, proof of insurance, and a credit card for the security deposit."
-            },
-            {
-              q: "Can I modify or cancel my reservation?",
-              a: "Yes, you can modify or cancel your reservation up to 24 hours before the pickup time."
-            },
-            {
-              q: "Is insurance included in the rental price?",
-              a: "Basic insurance is included. Additional coverage options are available at pickup."
-            },
-            {
-              q: "What is your fuel policy?",
-              a: "All vehicles are provided with a full tank and should be returned with a full tank."
-            }
-          ].map((faq, i) => (
-            <div key={i} className="bg-white p-4 md:p-6 rounded-lg shadow-md">
-              <h3 className="text-lg md:text-xl font-semibold mb-2">{faq.q}</h3>
-              <p className="text-gray-600">{faq.a}</p>
-            </div>
-          ))}
-        </div>
-      </div>
+      {/* FAQ Section */}  
     </div>
   );
 };

@@ -48,7 +48,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
     // Fetch all cars from the API
     const fetchCars = async () => {
         try {
-            const response = await axios.get('http://localhost:3000/api/cars');
+            const response = await axios.get('https://gocruise-carrental-mern-stack-web-app.onrender.com/api/cars');
             setCars(response.data);
         } catch (error) {
             console.error('Error fetching cars:', error);
@@ -57,7 +57,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
 
     const RentedCars = async () => {
         try {
-            const response = await axios.get(`http://localhost:3000/api/cars/rentedcars`, {
+            const response = await axios.get(`https://gocruise-carrental-mern-stack-web-app.onrender.com/api/cars/rentedcars`, {
                 headers: {
                     Authorization: `Bearer ${localStorage.getItem("token")}`,
                 },
